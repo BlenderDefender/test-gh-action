@@ -9,3 +9,7 @@ inputs:
   MESSAGE:
     description: "A custom message to log to the console"
     required: false
+
+runs:
+  using: "node14"
+  main: "dist/index.js"
