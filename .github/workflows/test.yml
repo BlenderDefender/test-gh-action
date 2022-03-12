@@ -1,0 +1,16 @@
+name: Test
+
+on:
+  issue:
+    types: [opened]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Hi GH"
