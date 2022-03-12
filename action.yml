@@ -1,0 +1,11 @@
+name: "Test action"
+description: "Yet another test action"
+author: "Blender Defender"
+
+inputs:
+  GITHUB_TOKEN:
+    description: "Github token"
+    required: true
+  MESSAGE:
+    description: "A custom message to log to the console"
+    required: false
