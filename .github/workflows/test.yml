@@ -1,7 +1,7 @@
 name: Test
 
 on:
-  issue:
+  issues:
     types: [opened]
   workflow_dispatch:
 
@@ -12,5 +12,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Hi GH"
