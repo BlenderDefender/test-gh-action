@@ -8,6 +8,8 @@ async function run() {
 
   console.log("Hello World");
   console.log(core.getInput("MESSAGE"));
+  console.log(github.context.repo.owner);
+  console.log(github.context.issue.number);
 }
 
 run();
